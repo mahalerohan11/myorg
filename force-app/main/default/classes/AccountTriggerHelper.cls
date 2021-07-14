@@ -17,7 +17,7 @@ public class AccountTriggerHelper {
             {
                 if (acc.Name==acc1.Name)
                 {
-                    acc.AddError('Account with same name already exists dev1');
+                    acc.AddError('Account with same name already exist dev1');
                 }
                     
             }
