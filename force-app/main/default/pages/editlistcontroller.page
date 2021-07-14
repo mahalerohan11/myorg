@@ -1,0 +1,19 @@
+<apex:page standardController="Opportunity" recordSetVar="opps" sidebar="false">
+<apex:form >
+<apex:pageBlock >
+
+<apex:pageblockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+</apex:pageblockButtons>
+
+<apex:pageblocktable value="{!opps}" var="ab">
+<apex:column value="{!ab.name}"/>
+<apex:column headerValue="Stagebaby">
+    <apex:inputfield value="{!ab.stagename}"/>
+</apex:column>    
+
+</apex:pageblocktable>
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

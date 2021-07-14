@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title ="Simple Calculator" icon-name="standard:calculated_insights">
+        <lightning-layout multiple-rows>
+            
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" name ="firstNumber" onchange={numberChnageHandler}></lightning-input>
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" name ="secondNumber" onchange={numberChnageHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-button-group>
+                    <lightning-button label ="Sub" onclick ={subHandler}></lightning-button>
+                    <lightning-button label ="Add" onclick ={addHandler}></lightning-button>
+                    
+                    <lightning-button label ="Mul" onclick ={mulHandler}></lightning-button>
+                    <lightning-button label ="Div" onclick ={divHandler}></lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+            
+            <lightning-layout-item  size="12" padding="around-medium">
+                <lightning-formatted-text value={currentResult}></lightning-formatted-text>
+            </lightning-layout-item>
+
+        </lightning-layout>
+
+    </lightning-card>
+    
+</template>

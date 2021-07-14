@@ -1,0 +1,10 @@
+<apex:page controller="objdisplaycontroller">
+    <apex:form >
+        <apex:outputLabel value="All Objects  "/>
+        <apex:selectList size="1">
+        	<apex:selectOptions value="{!objnames}"> 
+            
+            </apex:selectOptions>
+        </apex:selectList>
+    </apex:form>
+</apex:page>

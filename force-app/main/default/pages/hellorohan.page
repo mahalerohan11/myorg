@@ -1,0 +1,22 @@
+<apex:page standardController="Account">
+<apex:form >
+
+<apex:pageblock title="My 1st block">
+<apex:pageBlockButtons >
+<apex:commandButton action="{!Save}" value="Save"/> 
+</apex:pageBlockButtons>
+    
+     <apex:pageblockSection title="Acccount details">
+     <apex:outputField value="{!Account.name}"/>
+     <apex:outputField value="{!Account.AccountNumber}"/>
+     </apex:pageblockSection>
+     
+     <apex:pageblockSection title="Contact details">
+     <apex:outputField value="{!Account.Phone}"/>
+     <apex:outputField value="{!Account.Fax}"/>
+     </apex:pageblockSection>
+     
+</apex:pageblock>
+
+</apex:form>
+</apex:page>

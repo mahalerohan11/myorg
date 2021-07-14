@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<p class ="p1">Hello World!!</p>
+    <br/>
+    <p><lightning:formattedText value="Email salesforce.com and info.salesforce.com" /></p>
+    <p><lightning:formattedText value="Email info@salesforce.com" /></p>
+</aura:component>

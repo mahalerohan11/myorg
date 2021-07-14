@@ -1,0 +1,12 @@
+<apex:page >
+
+<apex:panelGrid columns="2" border="2">
+<apex:outputLink value="https://www.youtube.com/" target="blank">Youtube</apex:outputLink>
+<apex:outputLink value="https://www.google.com/" target="blank">Google</apex:outputLink>
+<apex:outputLink value="https://login.salesforce.com/?locale=in" target="blank">SalesForce</apex:outputLink>
+<apex:outputLink value="https://www.youtube.com/watch?v=_Z5-P9v3F8w" target="blank">Never Say Never</apex:outputLink>
+</apex:panelGrid> 
+
+ 
+ 
+</apex:page>

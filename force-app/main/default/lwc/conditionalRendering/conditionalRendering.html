@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title ="Condition">
+
+    <lightning-input type="Checkbox" lable ="Show Div" onchange={showDivHandle}></lightning-input>
+      
+     <template if:true={dispDiv}>
+        <div style="color:green;">I am here!</div>
+      </template>
+
+      <template if:false={dispDiv}>
+        <div style="color:red;">I am not here!</div>
+      </template>
+
+      <template for:each={cityList} for:item="city">
+          <p  key ={city}>{city} </p>
+      </template>
+    
+      <template iterator:it={cityList}>
+          <p key={it.value} > {it.value}</p>
+      </template>
+    </lightning-card>
+    
+    
+</template>

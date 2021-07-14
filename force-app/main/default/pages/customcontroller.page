@@ -1,0 +1,21 @@
+<apex:page controller="Mytestclass">
+<apex:form >
+<apex:pageblock title="BLock1">
+<apex:pageBlockButtons >
+<apex:commandButton action="{!Save}" value="Save"/>
+<apex:commandButton action="{!Cancel}" value="Cancel"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection title="Accountsection" columns="2">
+<apex:inputfield value="{!account.name}"/>
+<apex:inputfield value="{!account.phone}"/>
+<apex:inputfield value="{!account.industry}"/>
+
+
+</apex:pageBlockSection>
+
+
+</apex:pageblock>
+
+</apex:form>
+  
+</apex:page>
